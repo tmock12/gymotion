@@ -16,7 +16,7 @@ defmodule GymotionWeb.Router do
   scope "/", GymotionWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", MarketingController, :index
   end
 
   # Other scopes may use custom stacks.

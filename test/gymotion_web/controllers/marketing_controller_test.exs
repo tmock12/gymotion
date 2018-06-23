@@ -1,4 +1,4 @@
-defmodule GymotionWeb.PageControllerTest do
+defmodule GymotionWeb.MarketingControllerTest do
   use GymotionWeb.ConnCase
 
   test "GET /", %{conn: conn} do

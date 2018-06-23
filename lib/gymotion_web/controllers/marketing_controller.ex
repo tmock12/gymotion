@@ -1,4 +1,4 @@
-defmodule GymotionWeb.PageController do
+defmodule GymotionWeb.MarketingController do
   use GymotionWeb, :controller
 
   def index(conn, _params) do

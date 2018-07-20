@@ -6,8 +6,16 @@
     "watch": "brunch watch --stdin"
   },
   "dependencies": {
+    "bootstrap": "^4.1.2",
+    "copycat-brunch": "^1.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
     "phoenix": "file:../deps/phoenix",
-    "phoenix_html": "file:../deps/phoenix_html"
+    "phoenix_html": "file:../deps/phoenix_html",
+    "popper.js": "^1.14.3",
+    "sass-brunch": "^2.10.4",
+    "tether": "^1.4.4"
   },
   "devDependencies": {
     "babel-brunch": "6.1.1",

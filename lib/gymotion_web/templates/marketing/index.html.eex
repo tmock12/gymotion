@@ -21,7 +21,48 @@
 <header class="hero row justify-content-center align-items-center">
   <div class="col text-light text-center">
     <h1>Gymotion</h1>
-    <h3>Feel comfortable with your curves</h3>
+    <h3>Embrace your curves</h3>
     <a href="#" class="btn btn-lg btn-outline-light">Sign Up Now</a>
   </div>
 </header>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Schedule</h3>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col mt-2">
+      <h5>
+        Monday
+      </h5>
+      <%= render_many(@classes, GymotionWeb.MarketingView, "_class_card.html", as: :class) %>
+    </div>
+    <div class="col mt-2">
+      <h5>
+        Tuesday
+      </h5>
+    </div>
+    <div class="col mt-2">
+      <h5>
+        Wednesday
+      </h5>
+    </div>
+    <div class="col mt-2">
+      <h5>
+        Thursday
+      </h5>
+    </div>
+    <div class="col mt-2">
+      <h5>
+        Friday
+      </h5>
+    </div>
+    <div class="col mt-2">
+      <h5>
+        Saturday
+      </h5>
+    </div>
+  </div>
+</div>

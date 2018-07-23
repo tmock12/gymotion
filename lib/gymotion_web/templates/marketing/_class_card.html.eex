@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="card-body">
+    <h6 class="card-text">
+      <%= @class.name %>
+    </h6>
+  </div>
+</div>

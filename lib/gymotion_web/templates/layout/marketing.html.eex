@@ -12,15 +12,7 @@
   </head>
 
   <body>
-    <div class="container">
-      <%= if info = get_flash(@conn, :info) do %>
-        <p class="alert alert-info" role="alert"><%= info %></p>
-      <% end %>
-      <%= if error = get_flash(@conn, :error) do %>
-        <p class="alert alert-info" role="alert"><%= error %></p>
-      <% end %>
-      <%= render @view_module, @view_template, assigns %>
-    </div>
+    <%= render @view_module, @view_template, assigns %>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

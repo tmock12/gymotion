@@ -17,7 +17,9 @@ defmodule GymotionWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
-    get "/", MarketingController, :index
+    resources("/sessions", SessionController, only: [:new, :create])
+
+    get("/", MarketingController, :index)
   end
 
   # Other scopes may use custom stacks.

@@ -1,7 +1,8 @@
-<div class="card">
-  <div class="card-body">
-    <h6 class="card-text">
-      <%= @class.name %>
-    </h6>
-  </div>
-</div>
+<li class="list-group-item">
+  <h5>
+    <%= @class.name%>
+  </h5>
+  <p>
+    <%= @class.time%>
+  </p>
+</li>

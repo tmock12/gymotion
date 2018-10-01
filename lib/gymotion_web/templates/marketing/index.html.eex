@@ -9,7 +9,7 @@
         <a class="nav-link" href="">Classes & Prices</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Schedule</a>
+        <a class="nav-link" href="#schedule">Schedule</a>
       </li>
       <li class="navi-item">
         <a class="nav-link" href="">Sign Up</a>
@@ -26,43 +26,25 @@
   </div>
 </header>
 
-<div class="container mt-5">
+<div class="container mt-5" id="schedule">
   <div class="row">
     <div class="col">
       <h3 class="text-center">Schedule</h3>
     </div>
   </div>
-  <div class="row text-center">
-    <div class="col mt-2">
-      <h5>
-        Monday
-      </h5>
-      <%= render_many(@classes, GymotionWeb.MarketingView, "_class_card.html", as: :class) %>
-    </div>
-    <div class="col mt-2">
-      <h5>
-        Tuesday
-      </h5>
-    </div>
-    <div class="col mt-2">
-      <h5>
-        Wednesday
-      </h5>
-    </div>
-    <div class="col mt-2">
-      <h5>
-        Thursday
-      </h5>
-    </div>
-    <div class="col mt-2">
-      <h5>
-        Friday
-      </h5>
-    </div>
-    <div class="col mt-2">
-      <h5>
-        Saturday
-      </h5>
-    </div>
+
+  <div class="text-center row car-group no-gutters">
+    <%= for dateOfWeek <- @classes do %>
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-header text-nowrap">
+            <h4><%= dateOfWeek.day %></h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <%= render_many(dateOfWeek.classes, GymotionWeb.MarketingView, "_class_card.html", as: :class) %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>

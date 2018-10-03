@@ -6,13 +6,7 @@
     </div>
     <ul class="col nav d-flex justify-content-center align-items-center">
       <li class="nav-item">
-        <a class="nav-link" href="">Classes & Prices</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#schedule">Schedule</a>
-      </li>
-      <li class="navi-item">
-        <a class="nav-link" href="">Sign Up</a>
       </li>
     </ul>
   </div>
@@ -22,7 +16,6 @@
   <div class="col text-light text-center">
     <h1>Gymotion</h1>
     <h3>Embrace your curves</h3>
-    <a href="#" class="btn btn-lg btn-outline-light">Sign Up Now</a>
   </div>
 </header>
 

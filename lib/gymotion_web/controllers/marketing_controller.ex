@@ -7,38 +7,41 @@ defmodule GymotionWeb.MarketingController do
       %{
         day: "Luni",
         classes: [
-          %{name: "Zumba Fitness", time: "19:00"},
-          %{name: "Barre Stretch", time: "20:00"}
+          %{name: "Barre Fitness", time: "19:00"},
+          %{name: "Tabata", time: "20:00"}
         ]
       },
       %{
         day: "Marţi",
         classes: [
           %{name: "Pilates", time: "7:00"},
-          %{name: "Pilates", time: "20:00"}
+          %{name: "Barre Fitness", time: "19:00"},
+          %{name: "Barre Fitness", time: "20:00"}
         ]
       },
       %{
         day: "Miercuri",
         classes: [
-          %{name: "Pilates", time: "7:00"},
-          %{name: "Tone it up 30'", time: "19:00"},
-          %{name: "Zumba Fitness", time: "20:00"}
+          %{name: "Pilates", time: "18:00"},
+          %{name: "Zumba Fitness", time: "19:00"},
+          %{name: "Barre Fitness", time: "20:00"}
         ]
       },
       %{
         day: "Joi",
         classes: [
-          %{name: "Tone it up 30'", time: "18:00"},
+          %{name: "Pilates", time: "7:00"},
+          %{name: "Barre Fitness", time: "18:00"},
           %{name: "Zumba Fitness", time: "19:00"},
-          %{name: "Barre Stretch", time: "20:00"}
+          %{name: "Piliates", time: "20:00"}
         ]
       },
       %{
         day: "Vineri",
         classes: [
-          %{name: "Pilates", time: "18:00"},
-          %{name: "Zumba Fitness", time: "19:00"}
+          %{name: "Tabata", time: "18:00"},
+          %{name: "Pilates", time: "19:00"},
+          %{name: "Trim & Tone", time: "20:00"}
         ]
       },
       %{

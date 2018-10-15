@@ -7,8 +7,8 @@ defmodule GymotionWeb.MarketingController do
       %{
         day: "Luni",
         classes: [
-          %{name: "Barre Fitness", time: "19:00"},
-          %{name: "Tabata", time: "20:00"}
+          %{name: "Tabata", time: "19:00"},
+          %{name: "Pilates", time: "20:00"}
         ]
       },
       %{
@@ -16,13 +16,12 @@ defmodule GymotionWeb.MarketingController do
         classes: [
           %{name: "Pilates", time: "7:00"},
           %{name: "Barre Fitness", time: "19:00"},
-          %{name: "Barre Fitness", time: "20:00"}
+          %{name: "Zumba Fitness", time: "20:00"}
         ]
       },
       %{
         day: "Miercuri",
         classes: [
-          %{name: "Pilates", time: "18:00"},
           %{name: "Zumba Fitness", time: "19:00"},
           %{name: "Barre Fitness", time: "20:00"}
         ]
@@ -39,9 +38,7 @@ defmodule GymotionWeb.MarketingController do
       %{
         day: "Vineri",
         classes: [
-          %{name: "Tabata", time: "18:00"},
-          %{name: "Pilates", time: "19:00"},
-          %{name: "Trim & Tone", time: "20:00"}
+          %{name: "Tabata", time: "19:00"}
         ]
       },
       %{

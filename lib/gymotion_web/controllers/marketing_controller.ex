@@ -52,4 +52,8 @@ defmodule GymotionWeb.MarketingController do
 
     render(conn, "index.html", classes: classes)
   end
+
+  def schedule(conn, _params) do
+    render(conn, "schedule.html")
+  end
 end

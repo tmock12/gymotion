@@ -20,6 +20,7 @@ defmodule GymotionWeb.Router do
     resources("/sessions", SessionController, only: [:new, :create])
 
     get("/", MarketingController, :index)
+    get("/schedule", MarketingController, :schedule)
   end
 
   # Other scopes may use custom stacks.

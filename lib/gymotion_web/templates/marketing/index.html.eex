@@ -1,33 +1,7 @@
-<header class="container">
-  <div class="row">
-    <div class="col-4">
-      <div class="logo p-5">
-      </div>
-    </div>
-    <ul class="col nav d-flex justify-content-center align-items-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#schedule">Schedule</a>
-      </li>
-    </ul>
-  </div>
-</header>
-
 <header class="hero row justify-content-center align-items-center">
   <div class="col text-light text-center">
     <h1>Gymotion</h1>
     <h3>Embrace your curves</h3>
-    <a href="#schedule" class="btn btn-lg btn-outline-light">Rezerva un loc</a>
+    <%= link "Rezerva un loc", to: marketing_path(@conn, :schedule), class: "btn btn-lg btn-outline-light" %>
   </div>
 </header>
-
-<div class="container mt-5" id="schedule">
-  <div class="row">
-    <div class="col text-center">
-      <h3 class="text-center">Schedule </h3>
-    </div>
-  </div>
-
-  <div>
-    <iframe src="https://m.supersaas.com/schedule/Gymotion_Studio/Clase_de_grup" width="100%" height="800"> </iframe>
-  </div>
-</div>

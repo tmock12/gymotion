@@ -8,9 +8,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#schedule">Schedule</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.supersaas.com/schedule/Gymotion_Studio/Clase_de_grup">Rezerva un loc</a>
-      </li>
     </ul>
   </div>
 </header>
@@ -19,7 +16,7 @@
   <div class="col text-light text-center">
     <h1>Gymotion</h1>
     <h3>Embrace your curves</h3>
-    <a href="https://www.supersaas.com/schedule/Gymotion_Studio/Clase_de_grup" target="_blank" class="btn btn-lg btn-outline-light">Rezerva un loc</a>
+    <a href="#schedule" class="btn btn-lg btn-outline-light">Rezerva un loc</a>
   </div>
 </header>
 

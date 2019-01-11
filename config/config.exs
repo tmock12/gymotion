@@ -9,6 +9,9 @@ use Mix.Config
 config :gymotion,
   ecto_repos: [Gymotion.Repo]
 
+# Configures phoenix json library
+config :phoenix, :json_library, Jason
+
 # Configures the endpoint
 config :gymotion, GymotionWeb.Endpoint,
   url: [host: "localhost"],

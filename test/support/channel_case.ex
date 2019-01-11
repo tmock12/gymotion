@@ -25,13 +25,13 @@ defmodule GymotionWeb.ChannelCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(Gymotion.Repo)
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(Gymotion.Repo, {:shared, self()})
     end
+
     :ok
   end
-
 end

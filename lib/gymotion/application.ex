@@ -11,7 +11,7 @@ defmodule Gymotion.Application do
       # Start the Ecto repository
       supervisor(Gymotion.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(GymotionWeb.Endpoint, []),
+      supervisor(GymotionWeb.Endpoint, [])
       # Start your own worker by calling: Gymotion.Worker.start_link(arg1, arg2, arg3)
       # worker(Gymotion.Worker, [arg1, arg2, arg3]),
     ]

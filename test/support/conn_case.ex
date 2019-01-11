@@ -26,13 +26,13 @@ defmodule GymotionWeb.ConnCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(Gymotion.Repo)
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(Gymotion.Repo, {:shared, self()})
     end
+
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
-
 end

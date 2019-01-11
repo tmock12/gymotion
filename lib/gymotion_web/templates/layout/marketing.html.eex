@@ -8,30 +8,30 @@
     <meta name="author" content="">
 
     <title>Gymotion</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <header class="container">
       <div class="row">
         <div class="col-4">
-          <%= link to: marketing_path(@conn, :index) do %>
+          <%= link to: Routes.marketing_path(@conn, :index) do %>
             <div class="logo p-5">
             </div>
           <% end %>
         </div>
         <ul class="col nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <%= link "Home", to: marketing_path(@conn, :index), class: "nav-link" %>
+            <%= link "Home", to: Routes.marketing_path(@conn, :index), class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link "Schedule", to: marketing_path(@conn, :schedule), class: "nav-link" %>
+            <%= link "Schedule", to: Routes.marketing_path(@conn, :schedule), class: "nav-link" %>
           </li>
         </ul>
       </div>
     </header>
 
     <%= render @view_module, @view_template, assigns %>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

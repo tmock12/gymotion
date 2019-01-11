@@ -21,7 +21,7 @@ defmodule GymotionWeb do
     quote do
       use Phoenix.Controller, namespace: GymotionWeb
       import Plug.Conn
-      import GymotionWeb.Router.Helpers
+      alias GymotionWeb.Router.Helpers, as: Routes
       import GymotionWeb.Gettext
     end
   end
@@ -38,7 +38,7 @@ defmodule GymotionWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import GymotionWeb.Router.Helpers
+      alias GymotionWeb.Router.Helpers, as: Routes
       import GymotionWeb.ErrorHelpers
       import GymotionWeb.Gettext
     end

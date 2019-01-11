@@ -2,6 +2,6 @@
   <div class="col text-light text-center">
     <h1>Gymotion</h1>
     <h3>Embrace your curves</h3>
-    <%= link "Rezerva un loc", to: marketing_path(@conn, :schedule), class: "btn btn-lg btn-outline-light" %>
+    <%= link "Rezerva un loc", to: Routes.marketing_path(@conn, :schedule), class: "btn btn-lg btn-outline-light" %>
   </div>
 </header>

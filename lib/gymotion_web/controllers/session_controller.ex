@@ -15,7 +15,7 @@ defmodule GymotionWeb.SessionController do
       |> Auth.login(authenticated)
       |> assign(:current_user, authenticated)
       |> put_flash(:info, "Welcome!")
-      |> redirect(to: marketing_path(conn, :index))
+      |> redirect(to: Routes.marketing_path(conn, :index))
     else
       {:error, _reason} ->
         conn

@@ -8,19 +8,11 @@
     <meta name="author" content="">
 
     <title>Gymotion</title>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
-      <%= if info = get_flash(@conn, :info) do %>
-        <p class="alert alert-info" role="alert"><%= info %></p>
-      <% end %>
-      <%= if error = get_flash(@conn, :error) do %>
-        <p class="alert alert-info" role="alert"><%= error %></p>
-      <% end %>
-      <%= render @view_module, @view_template, assigns %>
+      <h1>hey</h1>
     </div>
-    <script src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
